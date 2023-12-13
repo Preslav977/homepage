@@ -77,6 +77,7 @@ body {
 .social-network-icon {
   width: 35px;
   height: 35px;
+  transition: transform 1s ease-in-out;
 }
 
 .main-content-container {
@@ -225,6 +226,7 @@ body {
   font-weight: 500;
 }
 
+.project-name,
 .personal-information,
 .project-description,
 .contact-road-name,
@@ -232,4 +234,8 @@ body {
 .contact-email-address {
   font-family: 'Kalnia', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
+}
+
+.social-network-icon:hover {
+  transform: rotate(360deg);
 }
