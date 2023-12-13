@@ -38,7 +38,7 @@ body {
 .personal-name {
   position: absolute;
   top: 10em;
-  left: 6em;
+  left: 5.5em;
   color: white;
 }
 
@@ -55,6 +55,7 @@ body {
   padding: 30px 10px 30px 20px;
   margin-top: 40px;
   background-color: lightblue;
+  box-shadow: 4px 2px 2px rgb(0.1, 0.1, 0.1);
 }
 
 .personal-information {
@@ -87,18 +88,16 @@ body {
 .projects {
   font-size: 22px;
   padding-bottom: 10px;
+  padding-left: 40px;
 }
 
 .projects-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
-  /* background-color: lightblue; */
-  /* color: white; */
 }
 
 .project-image-container {
-  /* border: 5px solid black; */
   height: 200px;
   color: white;
 }
@@ -106,12 +105,13 @@ body {
 .project-image {
   height: 200px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .project-information {
   outline: 1px solid black;
   height: 90px;
+  box-shadow: 4px 2px 2px rgb(0.1, 0.1, 0.1);
 }
 
 .project-content {
@@ -127,7 +127,6 @@ body {
 
 .footer-container {
   margin-top: 20px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   background-color: lightblue;
@@ -191,7 +190,7 @@ body {
 @media (max-width: 1100px) {
   .personal-name {
     top: 9em;
-    left: 3em;
+    left: 2em;
   }
 }
 
@@ -215,4 +214,22 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+
+.personal-name,
+.about-me,
+.projects,
+.contact-me,
+.contact-number {
+  font-family: 'Kalnia', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+.personal-information,
+.project-description,
+.contact-road-name,
+.contact-city-name,
+.contact-email-address {
+  font-family: 'Kalnia', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
 }
